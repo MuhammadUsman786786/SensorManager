@@ -23,6 +23,7 @@ class QrCodeScreen extends Component {
     await setToken(data);
     if (this.qrCodeScanHandler) {
       this.qrCodeScanHandler();
+      this.props.navigation.goBack();
     }
   };
 

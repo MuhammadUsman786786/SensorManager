@@ -1,5 +1,12 @@
 import React, {Component} from 'react';
-import {ActivityIndicator, FlatList, RefreshControl, StyleSheet, Text, View} from 'react-native';
+import {
+  ActivityIndicator,
+  FlatList,
+  RefreshControl,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 import ApplicationStyles from '../Theme/ApplicationStyles';
 import {moderateScale, scale} from 'react-native-size-matters';
 import {Colors} from '../Theme/Colors';

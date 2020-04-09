@@ -57,14 +57,14 @@ class ProgressDialog extends Component {
     }
     return (
       <ActivityIndicator
-        size={ size || 'large' }
-        style={ [
+        size={size || 'large'}
+        style={[
           styles.indicatorStyle,
           {marginTop, top: height / 2, left: width / 2},
           indicatorStyle,
-        ] }
-        color={ Colors.primaryColor }
-        animating={ animating }
+        ]}
+        color={Colors.primaryColor}
+        animating={animating}
       />
     );
   };
@@ -75,15 +75,15 @@ class ProgressDialog extends Component {
     if (display) {
       return blocking ? (
         <Modal
-          animationType={ 'fade' }
+          animationType={'fade'}
           transparent
-          visible={ blocking && !hideModal }
-          onRequestClose={ () => {
+          visible={blocking && !hideModal}
+          onRequestClose={() => {
             if (cancelable) {
               this.setState({hideModal: true});
             }
-          } }>
-          { this.renderLoading() }
+          }}>
+          {this.renderLoading()}
         </Modal>
       ) : (
         this.renderLoading()
